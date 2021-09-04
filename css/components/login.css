@@ -1,0 +1,81 @@
+.login {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.resetBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.resetBtn:hover {
+  animation: circlemove 1.5s infinite linear;
+}
+
+@keyframes circlemove {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10%);
+  }
+}
+
+.fadein {
+  animation: fadein 2s;
+}
+
+#login-form {
+  width: 270px;
+}
+
+.login-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.login-input::placeholder {
+  color: white;
+}
+
+.login-input:focus {
+  caret-color: white;
+  border-bottom: 1px solid white;
+  transition: 0.2s ease-in;
+}
+
+.login-input:focus::placeholder {
+  color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+#greeting {
+  display: inline;
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#login-form button {
+  visibility: hidden;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
